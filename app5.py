@@ -88,12 +88,7 @@ if uploaded_file is not None:
             for i, prob in enumerate(probs):
                 st.write(f"Digit {i}: {prob:.2%}")
 
-        else:
-            # Fallback: simple threshold-based recognition
-            st.write("## Using fallback recognition")
-
-            # Simple heuristic based on pixel intensity
-            st.write(f"Digit {i}: {prob:.2%}")
+      
         else:
             # Fallback: simple threshold-based recognition
             st.write("## Using fallback recognition")
